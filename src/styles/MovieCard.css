@@ -1,0 +1,60 @@
+.movie-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-info {
+  padding: 10px;
+}
+
+.movie-info h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.movie-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.favorite-btn {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.favorite-btn .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.favorite-btn.active .icon {
+  color: #ff6347; /* Color for the filled star */
+}
+
+.favorite-btn.active .icon::before {
+  content: '★'; /* Filled star */
+}
+
+.favorite-btn.active .text {
+  color: #ff6347;
+}

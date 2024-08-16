@@ -1,0 +1,24 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusts the number of columns based on available space */
+    gap: 20px; /* Space between movie cards */
+    padding: 20px; /* Padding around the entire movie list */
+    justify-content: center; /* Center the movie list on the page */
+  }
+  
+  @media (max-width: 768px) {
+    .movie-list {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust column width for smaller screens */
+      gap: 15px; /* Reduce the gap for smaller screens */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-list {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Further adjust for very small screens */
+      gap: 10px; /* Further reduce the gap for very small screens */
+      padding: 5px; /* Further reduce padding for very small screens */
+    }
+  }
+  

@@ -1,0 +1,20 @@
+.favorite-movies {
+    padding: 20px;
+  }
+  
+  .favorite-movies ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .favorite-movies li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-movies img {
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
